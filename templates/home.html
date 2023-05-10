@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <form action = "/esercizio" method = "get">
+            <label for="ciao">Seleziona una regione da un menù: </label>
+            <select name = "regione" id = "ciao">
+                {% for r in lista %}
+                    <option value = "{{r}}">{{r}}</option>
+                {% endfor %}
+            </select><br>
+            <input type = "submit" value="visualizzare una mappa">
+        </form>
+    </body> 
+</html>
